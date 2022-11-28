@@ -7,25 +7,32 @@ The purpose of this project is to develop and evaluate supervised machine learni
 ## Results
 
 ![NaiveRandomOversampling](/01-NaiveRandomOversampling.png "Naive Random Oversampling")
-* Vehicle Length and Ground Clearance provide a non-random amount of variance to the mpg value.
+* The Naive Random Oversampling method has a balanced accuracy score of 0.67.
+* The average precision score is 0.99 and the average recall score is 0.60.
 
 ![SMOTEOversampling](/02-SMOTEOversampling.png "SMOTE Oversampling")
-* Vehicle Length and Ground Clearance provide a non-random amount of variance to the mpg value.
+* The SMOTE Oversampling method has a balanced accuracy score of 0.65.
+* The average precision score is 0.99 and the average recall score is 0.68.
 
 ![Undersampling](/03-Undersampling.png "Undersampling")
-* Vehicle Length and Ground Clearance provide a non-random amount of variance to the mpg value.
+* The Undersampling method has a balanced accuracy score of 0.52.
+* The average precision score is 0.99 and the average recall score is 0.40.
 
 ![CombinationSampling](/04-CombinationSampling.png "Combination Sampling")
-* Vehicle Length and Ground Clearance provide a non-random amount of variance to the mpg value.
+* The Combination Sampling method has a balanced accuracy score of 0.66.
+* The average precision score is 0.99 and the average recall score is 0.57.
 
 ![BalancedRandomForestClassifier](/05-BalancedRandomForestClassifier.png "Balanced Random Forest Classifier")
-* Vehicle Length and Ground Clearance provide a non-random amount of variance to the mpg value.
+* The Balanced Random Forest Classifier method has a balanced accuracy score of 0.79.
+* The average precision score is 0.99 and the average recall score is 0.87.
 
 ![EasyEnsembleAdaBoostClassifier](/06-EasyEnsembleAdaBoostClassifier.png "Easy Ensemble AdaBoost Classifier")
-* Vehicle Length and Ground Clearance provide a non-random amount of variance to the mpg value.
+* The Easy Ensemble AdaBoost Classifier method has a balanced accuracy score of 0.93.
+* The average precision score is 0.99 and the average recall score is 0.94.
 
 ## Summary and Model Recommendation
 
-* The summary by Manufacturing Lot shows the summary statistic values grouped across each manufacturing lot. All three lots have 
-similar means and medians near the value of ~1500. The variance increases across Lot 1 through Lot 3 from 0.98 to 7.47 to 170.29.
-* The variance of Lot 3 exceeds the maximum value of 100 pounds per square inch. 
+* The precision values are similar for all models averaging at 0.99
+* The balanced accuracy ranges from 0.52 to 0.93.
+* The recall varies from 0.40 to 0.94.
+* The Easy Ensemble AdaBoost Classifier has the highest balanced accuracy and recall scores so it is the recommended model.
